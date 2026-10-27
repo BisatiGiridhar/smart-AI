@@ -1,0 +1,30 @@
+# Environment and secrets (keep .env.example tracked)
+.env
+.env*.local
+!.env.example
+
+# Python virtual environments and caches
+.venv/
+backend/.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+
+# Local databases and runtime data
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Node & Frontend build output
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db

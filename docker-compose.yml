@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: saiha
+      POSTGRES_USER: saiha
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U saiha -d saiha"]
+      interval: 5s
+      retries: 20
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        INSTALL_ML: ${INSTALL_ML:-true}
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://saiha:${POSTGRES_PASSWORD}@db:5432/saiha
+      CORS_ORIGINS: http://localhost:8080
+    volumes:
+      - appdata:/data
+      - hfcache:/home/saiha/.cache
+    depends_on:
+      db: { condition: service_healthy }
+    ports: ["8000:8000"]
+
+  frontend:
+    build: ./frontend
+    depends_on: [backend]
+    ports: ["8080:80"]
+
+volumes:
+  pgdata:
+  appdata:
+  hfcache:

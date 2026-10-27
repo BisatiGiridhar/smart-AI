@@ -1,0 +1,11 @@
+export type Membership = { workspace_id: string; workspace_name: string; role: Role };
+export type Role = "admin" | "recruiter" | "researcher" | "reviewer";
+export type Me = { id: string; email: string; full_name: string; memberships: Membership[]; active_workspace_id: string; role: Role };
+export type Task = { id: string; kind: string; status: "queued" | "running" | "succeeded" | "failed"; progress: number; message: string; error: string | null; result?: unknown };
+export type Criterion = { id: string; label: string; kind: "skill" | "experience_years" | "free_text"; weight: number; max_rating: number; terms: string[]; required: boolean; min_years?: number | null; note?: string | null };
+export type Rubric = { id: string; job_id: string; version: number; status: "draft" | "approved" | "superseded"; origin: string; criteria: Criterion[]; notes: string; created_at: string; approved_by: string | null; approved_at: string | null };
+export type Evidence = { quote: string; start: number; end: number; page?: number | null; verification?: string; kind?: string; matched_term?: string };
+export type AssessmentT = { criterion_id: string; status: "supported" | "contradicted" | "not_found" | "unsupported" | "needs_review"; rating: number | null; evidence: Evidence[]; explanation: string; method: string };
+export type DatasetVersion = { id: string; name: string; source_url: string; source_method: string; revision: string; license: string; is_synthetic: boolean; status: string; files: DatasetFile[]; mapping: unknown; validation: { errors?: string[]; rejected?: number } | null; summary: Record<string, unknown> | null; split_config: Record<string, unknown> | null; created_at: string; imported_at: string | null; card_excerpt?: string };
+export type DatasetFile = { name: string; bytes: number; sha256: string; error?: string; profile?: { rows: number; columns: { name: string; dtype: string; null_count: number; unique_count: number; avg_length: number; sample: string[] }[] }; suggestion?: { role: string; mapping: Record<string, string>; complete: boolean } };
+export type Corpus = string; // "genuine" | "dataset:<id>"

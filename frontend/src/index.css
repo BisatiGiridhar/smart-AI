@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base: 243 245 249; --surface: 255 255 255; --raised: 247 248 251; --line: 220 225 234;
+  --ink: 17 26 43; --muted: 90 100 120; --cyan: 11 139 163; --violet: 98 80 214;
+  --amber: 170 112 18; --danger: 196 60 60; --ok: 22 138 98;
+  color-scheme: light;
+}
+.dark {
+  --base: 11 18 32; --surface: 20 26 36; --raised: 27 35 48; --line: 38 48 67;
+  --ink: 228 233 242; --muted: 140 151 171; --cyan: 69 198 219; --violet: 154 140 245;
+  --amber: 224 178 90; --danger: 239 125 125; --ok: 92 201 160;
+  color-scheme: dark;
+}
+html, body, #root { height: 100%; }
+body { @apply bg-base text-ink font-sans antialiased; font-size: 15px; line-height: 1.55; }
+h1, h2, h3 { letter-spacing: -0.015em; }
+:focus-visible { outline: 2px solid rgb(var(--cyan)); outline-offset: 2px; border-radius: 6px; }
+.glass { background: rgb(var(--surface) / 0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.evidence-mark { background: rgb(var(--cyan) / 0.18); border-bottom: 2px solid rgb(var(--cyan)); border-radius: 2px; }
+.evidence-mark-active { background: rgb(var(--cyan) / 0.38); }
+.injection-mark { background: rgb(var(--amber) / 0.22); border-bottom: 2px dashed rgb(var(--amber)); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }

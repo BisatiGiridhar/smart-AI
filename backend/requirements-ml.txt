@@ -1,0 +1,3 @@
+# Dense retrieval and reranking (large downloads: PyTorch and model weights)
+sentence-transformers>=3.0,<6.0
+chromadb>=0.5,<2.0

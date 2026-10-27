@@ -1,0 +1,461 @@
+{
+ "_comment": "Configurable vocabulary used by the deterministic extractor and requirement analyzer. Each entry is a canonical skill name with optional aliases. Administrators may edit this file; it is configuration, not candidate data.",
+ "skills": {
+  "Python": [
+   "python",
+   "python3"
+  ],
+  "Java": [
+   "java"
+  ],
+  "JavaScript": [
+   "javascript",
+   "js",
+   "ecmascript"
+  ],
+  "TypeScript": [
+   "typescript"
+  ],
+  "C++": [
+   "c++",
+   "cpp"
+  ],
+  "C#": [
+   "c#",
+   "csharp"
+  ],
+  "C": [
+   "c programming",
+   "ansi c"
+  ],
+  "Go": [
+   "golang"
+  ],
+  "Rust": [
+   "rust"
+  ],
+  "Ruby": [
+   "ruby"
+  ],
+  "PHP": [
+   "php"
+  ],
+  "Kotlin": [
+   "kotlin"
+  ],
+  "Swift": [
+   "swift"
+  ],
+  "Scala": [
+   "scala"
+  ],
+  "R": [
+   "r programming",
+   "rstudio"
+  ],
+  "MATLAB": [
+   "matlab"
+  ],
+  "SQL": [
+   "sql"
+  ],
+  "Bash": [
+   "bash",
+   "shell scripting"
+  ],
+  "HTML": [
+   "html",
+   "html5"
+  ],
+  "CSS": [
+   "css",
+   "css3"
+  ],
+  "React": [
+   "react",
+   "react.js",
+   "reactjs"
+  ],
+  "Angular": [
+   "angular",
+   "angularjs"
+  ],
+  "Vue.js": [
+   "vue",
+   "vue.js",
+   "vuejs"
+  ],
+  "Next.js": [
+   "next.js",
+   "nextjs"
+  ],
+  "Node.js": [
+   "node.js",
+   "nodejs"
+  ],
+  "Express": [
+   "express.js",
+   "expressjs"
+  ],
+  "Django": [
+   "django"
+  ],
+  "Flask": [
+   "flask"
+  ],
+  "FastAPI": [
+   "fastapi"
+  ],
+  "Spring": [
+   "spring",
+   "spring boot",
+   "springboot"
+  ],
+  ".NET": [
+   ".net",
+   "asp.net",
+   "dotnet"
+  ],
+  "Ruby on Rails": [
+   "rails",
+   "ruby on rails"
+  ],
+  "GraphQL": [
+   "graphql"
+  ],
+  "REST APIs": [
+   "rest api",
+   "rest apis",
+   "restful"
+  ],
+  "gRPC": [
+   "grpc"
+  ],
+  "Microservices": [
+   "microservices",
+   "microservice"
+  ],
+  "PostgreSQL": [
+   "postgresql",
+   "postgres"
+  ],
+  "MySQL": [
+   "mysql"
+  ],
+  "MongoDB": [
+   "mongodb",
+   "mongo"
+  ],
+  "Redis": [
+   "redis"
+  ],
+  "Elasticsearch": [
+   "elasticsearch",
+   "elastic search"
+  ],
+  "Cassandra": [
+   "cassandra"
+  ],
+  "Oracle Database": [
+   "oracle db",
+   "oracle database",
+   "pl/sql"
+  ],
+  "SQL Server": [
+   "sql server",
+   "mssql",
+   "t-sql"
+  ],
+  "Snowflake": [
+   "snowflake"
+  ],
+  "BigQuery": [
+   "bigquery"
+  ],
+  "Redshift": [
+   "redshift"
+  ],
+  "AWS": [
+   "aws",
+   "amazon web services"
+  ],
+  "Azure": [
+   "azure",
+   "microsoft azure"
+  ],
+  "GCP": [
+   "gcp",
+   "google cloud"
+  ],
+  "Docker": [
+   "docker"
+  ],
+  "Kubernetes": [
+   "kubernetes",
+   "k8s"
+  ],
+  "Terraform": [
+   "terraform"
+  ],
+  "Ansible": [
+   "ansible"
+  ],
+  "Jenkins": [
+   "jenkins"
+  ],
+  "CI/CD": [
+   "ci/cd",
+   "continuous integration",
+   "continuous delivery"
+  ],
+  "Git": [
+   "git",
+   "github",
+   "gitlab"
+  ],
+  "Linux": [
+   "linux",
+   "unix"
+  ],
+  "Kafka": [
+   "kafka"
+  ],
+  "RabbitMQ": [
+   "rabbitmq"
+  ],
+  "Spark": [
+   "spark",
+   "pyspark",
+   "apache spark"
+  ],
+  "Hadoop": [
+   "hadoop"
+  ],
+  "Airflow": [
+   "airflow"
+  ],
+  "dbt": [
+   "dbt"
+  ],
+  "ETL": [
+   "etl",
+   "elt"
+  ],
+  "Data Warehousing": [
+   "data warehouse",
+   "data warehousing"
+  ],
+  "Pandas": [
+   "pandas"
+  ],
+  "NumPy": [
+   "numpy"
+  ],
+  "scikit-learn": [
+   "scikit-learn",
+   "sklearn"
+  ],
+  "TensorFlow": [
+   "tensorflow"
+  ],
+  "PyTorch": [
+   "pytorch",
+   "torch"
+  ],
+  "Keras": [
+   "keras"
+  ],
+  "Machine Learning": [
+   "machine learning",
+   "ml"
+  ],
+  "Deep Learning": [
+   "deep learning"
+  ],
+  "NLP": [
+   "nlp",
+   "natural language processing"
+  ],
+  "Computer Vision": [
+   "computer vision",
+   "opencv"
+  ],
+  "LLMs": [
+   "llm",
+   "llms",
+   "large language models"
+  ],
+  "MLOps": [
+   "mlops"
+  ],
+  "Statistics": [
+   "statistics",
+   "statistical analysis"
+  ],
+  "Data Analysis": [
+   "data analysis",
+   "data analytics"
+  ],
+  "Data Visualization": [
+   "data visualization",
+   "data visualisation"
+  ],
+  "Tableau": [
+   "tableau"
+  ],
+  "Power BI": [
+   "power bi",
+   "powerbi"
+  ],
+  "Excel": [
+   "excel",
+   "microsoft excel"
+  ],
+  "Looker": [
+   "looker"
+  ],
+  "A/B Testing": [
+   "a/b testing",
+   "ab testing",
+   "experimentation"
+  ],
+  "Agile": [
+   "agile",
+   "scrum",
+   "kanban"
+  ],
+  "Jira": [
+   "jira"
+  ],
+  "Project Management": [
+   "project management",
+   "pmp"
+  ],
+  "Product Management": [
+   "product management",
+   "product roadmap"
+  ],
+  "Stakeholder Management": [
+   "stakeholder management"
+  ],
+  "Leadership": [
+   "team leadership",
+   "led a team",
+   "people management"
+  ],
+  "Communication": [
+   "communication skills"
+  ],
+  "Figma": [
+   "figma"
+  ],
+  "UX Design": [
+   "ux design",
+   "user experience",
+   "ux research"
+  ],
+  "UI Design": [
+   "ui design",
+   "user interface design"
+  ],
+  "Adobe Creative Suite": [
+   "photoshop",
+   "illustrator",
+   "adobe creative suite"
+  ],
+  "SEO": [
+   "seo",
+   "search engine optimization"
+  ],
+  "Digital Marketing": [
+   "digital marketing",
+   "sem",
+   "ppc"
+  ],
+  "Salesforce": [
+   "salesforce"
+  ],
+  "SAP": [
+   "sap"
+  ],
+  "Accounting": [
+   "accounting",
+   "gaap",
+   "ifrs"
+  ],
+  "Financial Modeling": [
+   "financial modeling",
+   "financial modelling"
+  ],
+  "Cybersecurity": [
+   "cybersecurity",
+   "information security",
+   "infosec"
+  ],
+  "Penetration Testing": [
+   "penetration testing",
+   "pentesting"
+  ],
+  "Networking": [
+   "networking",
+   "tcp/ip",
+   "cisco"
+  ],
+  "Selenium": [
+   "selenium"
+  ],
+  "Test Automation": [
+   "test automation",
+   "automated testing"
+  ],
+  "Unit Testing": [
+   "unit testing",
+   "pytest",
+   "junit"
+  ],
+  "Android": [
+   "android"
+  ],
+  "iOS": [
+   "ios"
+  ],
+  "Flutter": [
+   "flutter"
+  ],
+  "React Native": [
+   "react native"
+  ],
+  "Unity": [
+   "unity3d",
+   "unity engine"
+  ],
+  "Embedded Systems": [
+   "embedded systems",
+   "embedded c",
+   "firmware"
+  ],
+  "AutoCAD": [
+   "autocad"
+  ],
+  "Six Sigma": [
+   "six sigma",
+   "lean six sigma"
+  ],
+  "Supply Chain": [
+   "supply chain",
+   "logistics"
+  ],
+  "Customer Service": [
+   "customer service",
+   "customer support"
+  ],
+  "Sales": [
+   "sales",
+   "business development"
+  ],
+  "Recruiting": [
+   "recruiting",
+   "talent acquisition"
+  ]
+ }
+}
